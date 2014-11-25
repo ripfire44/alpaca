@@ -393,6 +393,7 @@
             {
                 this.field.disabled = true;
             }
+			this.base();
         },
         
         /**
@@ -403,6 +404,7 @@
             {
                 this.field.disabled = false;
             }
+			this.base();
         },
         
         /**

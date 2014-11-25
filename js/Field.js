@@ -1062,14 +1062,16 @@
          * Disables the field.
          */
         disable: function() {
-            // OVERRIDE
+			if(this.field)
+				this.field.attr("disabled","disabled");
         },
 
         /**
          * Enables the field.
          */
         enable: function() {
-            // OVERRIDE
+			if(this.field)
+				this.field.removeAttr("disabled");
         },
 
         /**
