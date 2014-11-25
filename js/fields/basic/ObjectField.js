@@ -707,11 +707,13 @@
             if (valid)
             {
                 item.show();
+				item.enable();
                 item.onDependentReveal();
             }
             else
             {
                 item.hide();
+				item.disable();
                 item.onDependentConceal();
             }
         },
